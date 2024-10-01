@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="Task2.css">
+     
+</head>
+<body>
+ <header>
+    <div class="nav-container">
+        <h1>My To-Do List</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#login">Login</a></li>
+                
+            </ul>
+        </nav>
+    </div>
+ </header> 
+ <div class="container">
+    <h2>Manage Your Tasks</h2>
+    <input type="text" id="taskinput" placeholder="Add a new task...">
+    <button id="addTaskBtn">Add Task</button>
+    <ul id="tasklist">
+        <li>
+            <span class="task-text">Go to Gym</span>
+            <div>
+                <button class="edit-btn" onclick="editTask(this)">Edit</button>
+                <button class="delete-btn" onclick="deleteTask(this)">Delete</button>
+                <input type="check-box" onchange="togglecomplete(this)">
+            </div>
+        </li>
+        <li class="checked">
+            <span class="task-text">Pay Bills</span>
+            <div>
+                <button class="edit-btn" onclick="editTask(this)">Edit</button>
+                <button class="delete-btn" onclick="deleteTask(this)">Delete</button>
+                <input type="check-box" onchange="togglecomplete(this)" checked>
+            </div>
+        </li>
+        <li>
+            <span class="task-text">Buy Protein</span>
+            <div>
+                <button class="edit-btn" onclick="editTask(this)">Edit</button>
+                <button class="delete-btn" onclick="deleteTask(this)">Delete</button>
+                <input type="check-box" onchange="togglecomplete(this)">
+            </div>
+        </li>
+        <li>
+            <span class="task-text">Go for a walk ,After Dinner</span>
+            <div>
+                <button class="edit-btn" onclick="editTask(this)">Edit</button>
+                <button class="delete-btn" onclick="deleteTask(this)">Delete</button>
+                <input type="check-box" onchange="togglecomplete(this)">
+            </div>
+        </li>
+        </li>
+    </ul>
+ </div>
+ <script src="script.js"></script>
+              
+</body>
+</html>
+
